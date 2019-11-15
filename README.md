@@ -25,15 +25,15 @@ In this challenge, you will create a Single Page Application complete with Clien
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
-- [ ]  Explain benefit(s) using `client-side routing`?
+- [X]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: The client doesnt have to refresh the page to render new content, the whole site feels more snappy and faster.
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ]  Create a forked copy of this project.
+- [X]  Create a forked copy of this project.
 - [ ]  Add TL as collaborator on GitHub.
 - [ ]  Clone your OWN version of Repo (Not Lambda's by mistake!).
 - [ ]  Create a new Branch on the clone: `git checkout -b <firstName-lastName>`.
