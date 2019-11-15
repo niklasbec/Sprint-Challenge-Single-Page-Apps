@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios'
+import SearchFormWithFormik from './SearchForm'
 
 export default function CharacterList() {
   const [characters, addCharacters] = useState([])
@@ -21,6 +22,7 @@ export default function CharacterList() {
   return (
     <section className="character-list">
         <div>
+          <SearchFormWithFormik chars={characters} />
             {characters.map(character => (
                 <div className='character' key={character.id}>
                     <h2>Name: {character.name}</h2>
