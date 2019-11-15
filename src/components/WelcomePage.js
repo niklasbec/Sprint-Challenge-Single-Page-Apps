@@ -30,6 +30,10 @@ export default function WelcomePage() {
         <Link to='/characters'>
         <Button>See all characters</Button>
         </Link>
+
+        <Link to='/locations'>
+        <Button>See all locations</Button>
+        </Link>
       </header>
     </section>
   );

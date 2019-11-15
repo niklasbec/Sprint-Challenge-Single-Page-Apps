@@ -28,7 +28,7 @@ export default function CharacterList() {
                 <div className='character' key={character.id}>
                     <h2>Name: {character.name}</h2>
                     <p>Species: {character.species}</p>
-                    <p>Status {character.status}</p>
+                    <p>Status: {character.status}</p>
                     <p>{character.type}</p>
                 </div>
             ))}
