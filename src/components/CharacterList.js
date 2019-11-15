@@ -12,7 +12,8 @@ export default function CharacterList() {
     .then(response => {
       addCharacters(response.data.results)
       console.log(response.data.results);
-      console.log(characters);
+      console.log(characters.length);
+      console.log(characters[0]);
     })
     .catch(error => {
       console.log(error);
@@ -22,7 +23,7 @@ export default function CharacterList() {
   return (
     <section className="character-list">
         <div>
-          <SearchFormWithFormik chars={characters} />
+          <SearchFormWithFormik characters={characters} />
             {characters.map(character => (
                 <div className='character' key={character.id}>
                     <h2>Name: {character.name}</h2>

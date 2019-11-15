@@ -38,3 +38,6 @@ header h1 {
   text-align: center;
 }
 
+.character-searched {
+  background-color: red;
+}
