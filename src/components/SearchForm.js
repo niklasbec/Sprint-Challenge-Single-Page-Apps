@@ -58,9 +58,7 @@ let searchFormWithFormik = withFormik ({
     // }),
 
     handleSubmit(values, tools) {
-      console.log(tools.props.characters[0].name);
       let newArray = tools.props.characters
-      console.log(newArray);
 
       filteredCharacters = newArray.filter((currentItem, index) => {
         return currentItem.name.includes(values.searchField)
