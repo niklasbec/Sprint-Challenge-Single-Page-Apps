@@ -1,5 +1,21 @@
 import React from "react";
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
+
+const Button = styled.button`
+  font-size: 25px;
+  padding: 8px;
+  border: none;
+  color: white;
+  background: dodgerblue;
+  margin-left: 50px;
+  position: relative;
+  bottom: 100px;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+`
 
 export default function WelcomePage() {
   return (
@@ -11,6 +27,9 @@ export default function WelcomePage() {
           src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
           alt="rick"
         />
+        <Link to='/characters'>
+        <Button>See all characters</Button>
+        </Link>
       </header>
     </section>
   );
