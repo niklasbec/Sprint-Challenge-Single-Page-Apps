@@ -61,7 +61,7 @@ let searchFormWithFormik = withFormik ({
       let newArray = tools.props.characters
 
       filteredCharacters = newArray.filter((currentItem, index) => {
-        return currentItem.name.includes(values.searchField)
+        return currentItem.name.toLowerCase().includes(values.searchField.toLowerCase())
       })
 
       console.log(filteredCharacters);
